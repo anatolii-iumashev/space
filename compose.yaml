@@ -1,0 +1,42 @@
+services:
+  backend:
+    image: oven/bun:1-alpine
+    working_dir: /app
+    command: sh -c "bun install && bun run --watch src/backend/index.ts"
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - ./files:/app/files
+      - /app/node_modules   # изолируем node_modules контейнера
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: file:/app/data/space.db
+      FILES_DIR: /app/files
+      HOST: 0.0.0.0
+      PORT: "3000"
+      CLIENT_URL: http://localhost:3001
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+
+  frontend:
+    image: oven/bun:1-alpine
+    working_dir: /app
+    command: sh -c "bun install && bun run dev"
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./src/client:/app
+      - /app/node_modules   # изолируем node_modules контейнера
+    environment:
+      VITE_PROXY_TARGET: http://backend:3000
+    depends_on:
+      backend:
+        condition: service_healthy

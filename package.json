@@ -1,0 +1,38 @@
+{
+  "name": "space",
+  "description": "Space — self-hosted open workspace",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev-docker": "docker compose -f 'compose.yaml' up -d --build",
+    "dev": "bun run --watch src/backend/index.ts",
+    "dev:client": "cd src/client && bun run dev",
+    "build": "bun run src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.2",
+    "@elysiajs/jwt": "^1.4.2",
+    "@elysiajs/static": "^1.4.10",
+    "@elysiajs/websocket": "^0.2.8",
+    "aws-sdk": "^2.1692.0",
+    "drizzle-orm": "^0.38.0",
+    "elysia": "^1.4.28",
+    "ical.js": "^2.0.1",
+    "imapflow": "^1.0.170",
+    "mime-types": "^2.1.35",
+    "nanoid": "^5.1.0",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/nodemailer": "^6.4.17",
+    "@types/mime-types": "^2.1.4",
+    "drizzle-kit": "^0.30.0",
+    "typescript": "^5.7.0",
+    "bun-types": "^1.2.0"
+  }
+}

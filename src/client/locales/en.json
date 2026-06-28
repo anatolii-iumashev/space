@@ -1,0 +1,83 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+  "auth": {
+    "tagline": "Files, Mail & Calendar. Yours.",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "createAccount": "Create account",
+    "namePlaceholder": "Name",
+    "passwordPlaceholder": "Password",
+    "noAccount": "No account?",
+    "haveAccount": "Already have an account?",
+    "genericError": "Something went wrong"
+  },
+  "nav": {
+    "calendar": "Calendar",
+    "files": "Files",
+    "mail": "Mail",
+    "search": "Search",
+    "logout": "Log out"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "syncCalDAV": "Sync CalDAV",
+    "newEvent": "New event",
+    "titlePlaceholder": "Title",
+    "descriptionPlaceholder": "Description",
+    "start": "Start",
+    "end": "End",
+    "allDay": "All day",
+    "noEvents": "No events",
+    "deleteConfirm": "Delete event?",
+    "colTitle": "Title",
+    "description": "Description"
+  },
+  "files": {
+    "title": "Files",
+    "newFolder": "New folder",
+    "upload": "Upload",
+    "myDrive": "My Drive",
+    "folderNamePlaceholder": "Folder name",
+    "emptyFolder": "Folder is empty",
+    "colName": "Name",
+    "colSize": "Size",
+    "colType": "Type",
+    "folderType": "Folder",
+    "deleteConfirm": "Delete?",
+    "download": "Download"
+  },
+  "mail": {
+    "title": "Mail",
+    "compose": "Compose",
+    "imapError": "check IMAP settings in .env",
+    "configureImap": "Configure IMAP in .env",
+    "noMessages": "No messages",
+    "newMessage": "New message",
+    "toPlaceholder": "To",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Message...",
+    "send": "Send",
+    "from": "From",
+    "to": "To",
+    "loadFullMessage": "Click to load full message content",
+    "selectMessage": "Select a message",
+    "sendError": "Error"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search files, events, mail...",
+    "button": "Search",
+    "searching": "Searching...",
+    "noResults": "Nothing found",
+    "fileLabel": "File",
+    "eventLabel": "Event",
+    "mailLabel": "Mail",
+    "typeLabel": "Type",
+    "titleLabel": "Title",
+    "previewLabel": "Preview"
+  }
+}

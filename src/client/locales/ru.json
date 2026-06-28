@@ -1,0 +1,83 @@
+{
+  "common": {
+    "loading": "Загрузка...",
+    "cancel": "Отмена",
+    "create": "Создать"
+  },
+  "auth": {
+    "tagline": "Файлы, Почта и Календарь. Ваши.",
+    "signIn": "Войти",
+    "signUp": "Зарегистрироваться",
+    "createAccount": "Создать аккаунт",
+    "namePlaceholder": "Имя",
+    "passwordPlaceholder": "Пароль",
+    "noAccount": "Нет аккаунта?",
+    "haveAccount": "Уже есть аккаунт?",
+    "genericError": "Ошибка"
+  },
+  "nav": {
+    "calendar": "Календарь",
+    "files": "Файлы",
+    "mail": "Почта",
+    "search": "Поиск",
+    "logout": "Выйти"
+  },
+  "calendar": {
+    "title": "Календарь",
+    "syncCalDAV": "Синк CalDAV",
+    "newEvent": "Новое событие",
+    "titlePlaceholder": "Название",
+    "descriptionPlaceholder": "Описание",
+    "start": "Начало",
+    "end": "Конец",
+    "allDay": "Весь день",
+    "noEvents": "Нет событий",
+    "deleteConfirm": "Удалить событие?",
+    "colTitle": "Название",
+    "description": "Описание"
+  },
+  "files": {
+    "title": "Файлы",
+    "newFolder": "Папка",
+    "upload": "Загрузить",
+    "myDrive": "Мой диск",
+    "folderNamePlaceholder": "Имя папки",
+    "emptyFolder": "Папка пуста",
+    "colName": "Имя",
+    "colSize": "Размер",
+    "colType": "Тип",
+    "folderType": "Папка",
+    "deleteConfirm": "Удалить?",
+    "download": "Скачать"
+  },
+  "mail": {
+    "title": "Почта",
+    "compose": "Написать",
+    "imapError": "проверьте настройки IMAP в .env",
+    "configureImap": "Настройте IMAP в .env",
+    "noMessages": "Нет писем",
+    "newMessage": "Новое письмо",
+    "toPlaceholder": "Кому",
+    "subjectPlaceholder": "Тема",
+    "messagePlaceholder": "Сообщение...",
+    "send": "Отправить",
+    "from": "От",
+    "to": "Кому",
+    "loadFullMessage": "Нажмите для загрузки полного содержания письма",
+    "selectMessage": "Выберите письмо",
+    "sendError": "Ошибка"
+  },
+  "search": {
+    "title": "Поиск",
+    "placeholder": "Поиск по файлам, событиям, почте...",
+    "button": "Найти",
+    "searching": "Ищу...",
+    "noResults": "Ничего не найдено",
+    "fileLabel": "Файл",
+    "eventLabel": "Событие",
+    "mailLabel": "Письмо",
+    "typeLabel": "Тип",
+    "titleLabel": "Название",
+    "previewLabel": "Фрагмент"
+  }
+}

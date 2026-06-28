@@ -1,0 +1,6 @@
+{
+  "paths": {
+    "dataDir": "/app/data",
+    "filesDir": "/app/files"
+  }
+}

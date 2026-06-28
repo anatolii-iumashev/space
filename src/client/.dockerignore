@@ -1,0 +1,8 @@
+node_modules
+bun.lock
+dist/
+.env
+.env.*
+!.env.example
+nginx.conf
+*.md
